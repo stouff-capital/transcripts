@@ -1,0 +1,7 @@
+elasticsearch
+furl
+notebook
+pandas
+python-dotenv
+requests
+scrapy
