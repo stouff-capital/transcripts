@@ -78,6 +78,7 @@ class TranscriptSpider(scrapy.Spider):
                 if dic_res['hits']['total'] == 0:
                     # Request transcript url for further scraping, passing what we've collected so far as meta information
                     request = scrapy.Request(item['url'], callback=self.parse_transcript)
+                    #request = scrapy.Request(item['url'], callback=self.parse_transcript, meta={'proxy': 'https://93.91.154.195:8080'})
                     request.meta['item'] = item
                     yield request
                 else:
