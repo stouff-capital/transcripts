@@ -18,6 +18,7 @@ from requests.auth import HTTPBasicAuth
 auth=(os.getenv("ELASTICSEARCH_USER"), os.getenv("ELASTICSEARCH_PASSWORD"))
 
 from datetime import date, timedelta
+today = date.today()
 yesterday = date.today() - timedelta(1)
 
 class TranscriptSpider(scrapy.Spider):
@@ -60,6 +61,8 @@ class TranscriptSpider(scrapy.Spider):
                 date_txt = link.css('.date_on_by::text').extract_first()
                 if "Yesterday" in date_txt:
                     date_txt = yesterday.strftime('%a, %b. %d')
+                elif "Today" in date_txt:
+                    date_txt = today.strftime('%a, %b. %d')
                 item['date'] = parse_date( date_txt )
 
                 item['company'] = company

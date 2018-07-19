@@ -117,7 +117,7 @@ ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
-CONCURRENT_REQUESTS = 4
+CONCURRENT_REQUESTS = 6
 DOWNLOAD_DELAY = 3
 
 # Configure a delay for requests for the same website (default: 0)
