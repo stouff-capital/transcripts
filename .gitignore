@@ -1,7 +1,13 @@
 # Data
 webscrapper/company_transcripts
+webscrapper/company_transcripts_path
 webscrapper/company_prices
+webscrapper/mkdata/*.json
 webscrapper/*.csv
+webscrapper/*.xlsx
+webscrapper/*.zip
+webscrapper/proxy.txt
+webscrapper/proxies.txt
 
 
 # Byte-compiled / optimized / DLL files

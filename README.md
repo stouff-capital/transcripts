@@ -2,7 +2,11 @@
 Scraper based on https://github.com/jeremyjordan/stock-price-forecasting
 
 ## setup
-set `.env` with ELASTICSEARCH_URL, ELASTICSEARCH_USER and ELASTICSEARCH_PASSWORD
+set `.env` with
+- ELASTICSEARCH_URL
+- ELASTICSEARCH_USER
+- ELASTICSEARCH_PASSWORD
+- ALPHAVANTAGE_API
 
 ## Data
 ##### Stock price

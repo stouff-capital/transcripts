@@ -117,7 +117,7 @@ ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
-CONCURRENT_REQUESTS = 6
+CONCURRENT_REQUESTS = 5
 DOWNLOAD_DELAY = 3
 
 # Configure a delay for requests for the same website (default: 0)
@@ -155,6 +155,8 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 ROTATING_PROXY_LIST_PATH = 'proxies.txt'
+ROTATING_PROXY_BACKOFF_BASE = 900
+ROTATING_PROXY_CLOSE_SPIDER = True
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html

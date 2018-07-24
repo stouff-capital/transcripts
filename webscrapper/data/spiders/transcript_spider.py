@@ -85,7 +85,7 @@ class TranscriptSpider(scrapy.Spider):
                     request.meta['item'] = item
                     yield request
                 else:
-                    self.logger.info('already in db based on url')
+                    self.logger.info(f'{company}: already in db based on url')
 
             f = furl(response.url)
             f.args['page'] = str(int(f.args['page'])+1)
