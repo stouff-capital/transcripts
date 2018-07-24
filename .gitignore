@@ -1,6 +1,7 @@
 # Data
 webscrapper/company_transcripts
-webscrapper/company_transcripts_path
+webscrapper/company_transcripts_path/*
+webscrapper/company_transcripts_path/issues/*
 webscrapper/company_prices
 webscrapper/mkdata/*.json
 webscrapper/*.csv
